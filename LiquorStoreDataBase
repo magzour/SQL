@@ -1,0 +1,24 @@
+----Create Liquor Store Database
+
+
+
+CREATE TABLE hitime (id integer primary key, items text, quantity integer, price integer, aisle integer);
+
+INSERT into hitime VALUES (1, "Bourbon", 25, 49.99, 2);
+INSERT into hitime VALUES (2, "Vodka", 45, 39.99, 3);
+INSERT into hitime VALUES (3, "Tequila", 25, 29.99, 4);
+INSERT into hitime VALUES (4, "Rum", 25, 19.99, 5);
+INSERT into hitime VALUES (5, "scotch", 25, 24.99, 6);
+INSERT into hitime VALUES (6, "japanese whiskey", 25, 82.99, 7);
+INSERT into hitime VALUES (7, "Irish whiskey", 25, 72.99, 8);
+INSERT into hitime VALUES (8, "amaro", 25, 42.99, 9);
+INSERT into hitime VALUES (9, "Rye", 25, 22.99, 12);
+INSERT into hitime VALUES (10, "Single Malt", 25, 12.99, 12);
+INSERT into hitime VALUES (11, "Cabernet", 25, 64.99, 22);
+INSERT into hitime VALUES (12, "Merlot", 25, 9.99, 32);
+INSERT into hitime VALUES (13, "Pinot Noir", 25, 105.99, 22);
+INSERT into hitime VALUES (14, "American Whiskey", 25, 2000, 12);
+
+---Display database by price
+
+SELECT * FROM hitime ORDER BY price
